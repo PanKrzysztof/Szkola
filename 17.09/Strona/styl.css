@@ -1,0 +1,51 @@
+*
+{
+    font-family: Helvetica;
+}
+.baner, .stopka
+{
+    background-color: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+.lewy, .prawy
+{
+    background-color: navajowhite;
+    width: 15%;
+    height: 700px;
+    float: left;
+}
+.srodek
+{
+    width: 70%;
+    height: 700px;
+    overflow-y: scroll;
+    float: left;
+}
+img
+{
+    width: 100%;
+}
+
+
+h3, p, a
+{
+    opacity: 0;
+}
+h3
+{
+    margin-top: 5%;
+}
+p
+{
+    margin-top: 30%;
+}
+a
+{
+    margin-top: 70%;
+    margin-left: 70%;
+    background-color: sienna;
+    padding: 15px;
+}

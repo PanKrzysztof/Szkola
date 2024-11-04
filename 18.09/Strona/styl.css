@@ -1,0 +1,52 @@
+*
+{
+    font-family: Roboto, Serif;
+}
+.baner
+{
+    background-color: Crimson;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+    padding: 10px;
+}
+.blok1
+{
+    background-color: MistyRose;
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid crimson;
+}
+.blok1>img
+{
+    height: 100%;
+}
+.blok2, .blok3
+{
+    background-color: snow;
+    height: 450px;
+    width: 21%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid crimson;
+}
+.stopka
+{
+    background-color: Crimson;
+    color: white;
+}
+img
+{
+    width: 100%;
+}
+h4
+{
+    font-size: 180%;
+    text-align: center;
+    color: crimson;
+}

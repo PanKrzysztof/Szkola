@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogotowie komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="IMG/favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="kontener">
+        <section class="baner">
+            <img src="IMG/animacja.gif">
+        </section>
+        <section class="menu">
+            <a href="index.html">O nas</a>
+            <a href="kontakt.html">Kontakt</a>
+        </section>
+        <section class="blok1"></section>
+        <section class="blok2">
+            <h3>Formularz kontaktowy</h3>
+            <table>
+                <tr>
+                    <td>Imię:</td>
+                    <td><input type="text" id="imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko:</td>
+                    <td><input type="text" id="nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Usługa:</td>
+                    <td>
+                        <select id="usluga">
+                            <option value="naprawa komputera">naprawa komputera</option>
+                            <option value="odzyskiwanie danych, problemy z oprogramowaniem">odzyskiwanie danych, problemy z oprogramowaniem</option>
+                            <option value="konfiguracja sieci LAN">konfiguracja sieci LAN</option>
+                            <option value="inne">inne</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" checked id="kopia" value="kopia wiadomosci">
+                        <label for="kopia">Wyślij kopię wiadomości</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="reset" class="resetuj">Resetuj</button>
+                        <button type="submit" class="wyslij" onclick="dane()">Prześlij</button>
+                    </td>
+                </tr>
+            </table>
+            <p id="wynik"></p>
+        </section>
+        </section>
+        <section class="blok3">
+
+        </section>
+        <section class="stopka">
+            <p>Autor strony: <b>Krzysztof Holeczko</b></p>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+
+    <form>
+        <input type="number" id="liczba1">
+        <input type="number" id="liczba2">
+        <input type="number" id="liczba3">
+        <button type="submit" onclick="liczenie()">Gotowe</button>
+    </form>
+
+    <script>
+
+        function liczenie()
+        {
+            var a = document.getElementById("liczba1").value;
+            var b = document.getElementById("liczba2").value;
+            var c = document.getElementById("liczba3").value;
+
+            a = parseFloat(a);
+            b = parseFloat(b);
+            c = parseFloat(c);
+            alert(a + b + c);
+            var s = ((a + b + c)/3)
+            alert("średnia: " + s);
+        }
+    </script>
+</body>
+</html>

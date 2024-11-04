@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciągi liczbowe</title>
+    <link rel="stylesheet" href="styl2.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="baner1">
+        <h2>Poznaj Ciągi Liczbowe</h2>
+    </section>
+    <section class="baner2">
+        <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+    </section>
+    <section class="baner3">
+        <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+    </section>
+    <section class="baner4">
+        <img src="IMG/obraz1.png" alt="Fibonacci">
+    </section>
+    <section class="lewy">
+        <ol>
+            <li>ciągi arytmetyczne</li>
+            <li>ciągi geomatryczne</li>
+            <li>ciąg Fibonacciego</li>
+        </ol>
+    </section>
+    <section class="prawy">
+        <h2>Generowanie ciągu arytmetycznego</h2>
+        <label for="A">Pierwszy wyraz A1: </label> 
+        <input type="number" id="A"><br>
+        <label for="R">Różnica ciągu R: </label>
+        <input type="number" id="R"><br>
+        <label for="N">Liczba wyrazów w ciągu N: </label>
+        <input type="number" id="N"><br>
+        <button type="submit" onclick="liczenie()">Generuj Ciąg</button>
+        <p id="wynik"></p>
+    </section>
+    <section class="stopka">
+        <p>Autor: Krzysztof Holeczko</p>
+    </section>
+</body>
+</html>

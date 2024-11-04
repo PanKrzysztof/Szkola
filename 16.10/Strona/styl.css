@@ -1,0 +1,55 @@
+body
+{
+    background-color: #99FFCC;
+}
+.kontener
+{
+    width: 1000px;
+    margin: auto;
+}
+.baner
+{
+    background-color: #99FF66;
+    height: 200px;
+}
+.menu
+{
+    background-color: #66CCFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blok1, .blok2, .blok3
+{
+    width: 310px;
+    padding: 10px;
+    float: left;
+}
+.stopka
+{
+    background-color: #66CCFF;
+    color: #006666;
+    text-align: right;
+    height: 30px;
+    padding: 20px;
+    clear: both;
+}
+.menu a
+{
+    color: #006666;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+h2, h3
+{
+    text-align: center;
+}
+.wyslij
+{
+    background-color: #FF0000;
+}
+.resetuj
+{
+    background-color: #00FF00;
+}

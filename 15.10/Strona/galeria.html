@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro turystyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    <script>
+        const images = ['IMG/1.jpg', 'IMG/2.jpg', 'IMG/3.jpg', 'IMG/4.jpg', 'IMG/5.jpg', 'IMG/6.png', 'IMG/7.jpg'];
+        let currentImageIndex = 0;
+
+        function NextImage() 
+        {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('zdjecie').src = images[currentImageIndex];
+        }
+
+        function PreviousImage() 
+        {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            document.getElementById('zdjecie').src = images[currentImageIndex];
+        }
+    </script>
+</head>
+<body>
+    <section class="baner">
+        <h1>Zwiedzamy Polskę</h1>
+    </section>
+    <section class="lewy">
+        <input type="submit" value="&lt;" onclick="PreviousImage()">
+    </section>
+    <section class="srodek">
+        <img id="zdjecie" src="1.jpg" alt="Aktywne zdjęcie">
+    </section>
+    <section class="prawy">
+        <input type="submit" value="&gt;" onclick="NextImage()">
+    </section>
+    <section class="miniatury">
+        <img src="IMG/1.jpg" alt="Gdańsk" class="miniatura">
+        <img src="IMG/2.jpg" alt="Kraków" class="miniatura">
+        <img src="IMG/3.jpg" alt="Niedzica" class="miniatura">
+        <img src="IMG/4.jpg" alt="Pieniny" class="miniatura">
+        <img src="IMG/5.jpg" alt="Szklarska Poręba" class="miniatura">
+        <img src="IMG/6.png" alt="Tatry" class="miniatura">
+        <img src="IMG/7.jpg" alt="Wrocław" class="miniatura">
+    </section>
+    <section class="stopka">
+        <h3>Autorem galerii jest:</h3>
+        <p>Krzysztof Holeczko</p>
+        <a href="http://pixabay.com">Więcej zdjęć</a>
+    </section>
+</body>
+</html>
