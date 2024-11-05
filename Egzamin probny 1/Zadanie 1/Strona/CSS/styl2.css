@@ -1,0 +1,42 @@
+body
+{
+    background-color: #AEF1F4;
+    font-family: Georgia;
+}
+.baner
+{
+    background-color: #0EA2A9;
+    text-align: center;
+    color: white;
+    height: 80px;
+}
+.lewy
+{
+    width: 40%;
+    font-size: 150%;
+    float: left;
+}
+.prawy
+{
+    float: left;
+}
+.dolny
+{
+    background-color: #4FCDD4;
+    padding: 30px;
+    clear: both;
+}
+.stopka
+{
+    background-color: #0EA2A9;
+    color: white;
+    height: 80px;
+}
+img
+{
+    height: 300px;
+}
+table
+{
+    border: 1px solid black;
+}
