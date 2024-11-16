@@ -1,4 +1,0 @@
-kw1: INSERT INTO pracownicy VALUES (NULL, "Joanna", "Dobrowolska", 2);
-kw2: SELECT imie, nazwisko FROM pracownicy WHERE stanowisko=3;
-kw3: SELECT id, nazwa FROM dania WHERE cena<25 AND typ=1;
-kw4: UPDATE dania SET cena=cena+1 WHERE typ=4;
