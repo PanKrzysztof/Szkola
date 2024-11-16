@@ -1,0 +1,4 @@
+kw1: SELECT id, imie, nazwisko, adres, miasto FROM pracownicy WHERE id=1;
+kw2: SELECT imie, nazwisko FROM pracownicy WHERE czyRODO=0;
+kw3: SELECT id, nazwisko FROM pracownicy WHERE czyBadania=0 AND dataUr BETWEEN 1970 AND 1979;
+kw4: ALTER TABLE pracownicy ADD COLUMN umiejetnosci text;
