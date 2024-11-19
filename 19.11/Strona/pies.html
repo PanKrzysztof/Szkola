@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasze zdjęcia</title>
+    <link rel="stylesheet" href="CSS/styl6.css">
+    
+</head>
+<body>
+    <section class="baner">
+        <h2>Nasze Psy</h2>
+    </section>
+    <section class="lewy">
+        <h1>Wybierz</h1>
+        <ol>
+            <li><a href="pies.html">Psy</a></li>
+            <li><a href="kot.html">Koty</a></li>
+            <li>Konie</li>
+            <li>Rybki</li>
+            <li>Inne zdjęcia</li>
+        </ol>
+        <h5><a href="index.html">Do strony głównej</a></h5>
+    </section>
+    <section class="prawy1">
+        <h2>Kliknij na zdjęcie</h2>
+        <img src="IMG/pies1.jpg" alt="psy" class="thumbnail" data-original="IMG/pies1.jpg" data-effect="IMG/pies1-odbicie.jpg">
+        <img src="IMG/pies2.jpg" alt="psy" class="thumbnail" data-original="IMG/pies2.jpg" data-effect="IMG/pies2-odbicie.jpg">
+        <img src="IMG/pies3.jpg" alt="psy" class="thumbnail" data-original="IMG/pies3.jpg" data-effect="IMG/pies3-odbicie.jpg">
+    </section>
+    <section class="prawy2">
+        <p><img src="" alt="Wybrany pies" id="preview-image"></p>
+        <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const previewImage = document.getElementById('preview-image');
+        previewImage.src = "IMG/pies1.jpg";
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('mouseenter', () => {
+                thumbnail.src = thumbnail.dataset.effect;
+            });
+
+            thumbnail.addEventListener('mouseleave', () => {
+                thumbnail.src = thumbnail.dataset.original;
+            });
+
+            thumbnail.addEventListener('click', () => {
+                thumbnail.src = thumbnail.dataset.original;
+                previewImage.src = thumbnail.dataset.original;
+            });
+        });
+        </script>
+    </section>
+    <section class="stopka">
+        <p>Galerię zdjęć opracował: <b>Krzysztof Holeczko</b></p>
+    </section>
+</body>
+</html>
