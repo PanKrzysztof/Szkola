@@ -1,0 +1,4 @@
+kw1: SELECT * FROM pracownicy;
+kw2: SELECT * FROM pracownicy WHERE nazwisko="Król";
+kw3: SELECT COUNT(id) FROM pracownicy ORDER BY id;
+kw4: INSERT INTO pracownicy (nazwisko, imie, PESEL) VALUES ("Rak", "Monika", "00101843690");
