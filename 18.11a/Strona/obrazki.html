@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="CSS/styl.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <section class="baner">
+        <h2>Efekty na obrazach</h2>
+    </section>
+    <section class="blok">
+        <div id="pszczola"><img src="IMG/pszczola.jpg" alt="pszczoła na fioletowym kwiatku"></div>
+        <input type="radio" name="efekt" value="blur">
+        <label for="blur">Blur</label><br>
+        <input type="radio" name="efekt" value="sepia">
+        <label for="sepia">Sepia</label><br>
+        <input type="radio" name="efekt" value="negatyw">
+        <label for="negatyw">Negatyw</label><br>
+        <input type="button" class="zastosuj" value="Zastosuj" onclick="pszczola()">
+    </section>
+    <section class="blok">
+        <div id="pomarancza"><img src="IMG/pomarancza.jpg" alt="drzewo pomarańczy"></div>
+        <input type="button" class="zastosuj" value="Kolorowy" onclick="kolorowy()">
+        <input type="button" class="zastosuj" value="Czarno-biały" onclick="czarnobialy()">
+    </section>
+    <section class="blok">
+        <div id="owoce"><img src="IMG/owoce.jpg" alt="Kosz pełen owoców"></div>
+        <input type="range" min="1" max="100" value="100" id="suwak-owoce">
+        <input type="button" class="zastosuj" value="Zastosuj" onclick="owoce()">
+    </section>
+    <section class="blok">
+        <div id="zlow"><img src="IMG/zolw.jpg" alt="Żółw w wodzie"></div>
+        <input type="range" value="100" min="1" max="250" id="suwak-zlow">
+        <input type="button" class="zastosuj" value="Zastosuj" onclick="zlow()">
+    </section>
+    <section class="stopka">
+        <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty
+            obrazu</a></p>
+        <p>Stronę wykonał: Krzysztof</p>
+    </section>
+</body>
+</html>

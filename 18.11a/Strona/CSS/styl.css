@@ -1,0 +1,59 @@
+*{
+    font-family: Century, Serif;
+    text-align: center;
+}
+.baner, .stopka
+{
+    background-color: Indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    clear: both;
+}
+.blok
+{
+    width: 50%;
+    height: 470px;
+    float: left;
+}
+img
+{
+    padding: 3px;
+    margin: 10px;
+    border: 2px dashed slateblue;
+}
+a
+{
+    color: white;
+}
+.zastosuj
+{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.zastosuj:hover
+{
+    background-color: Indigo;
+}
+input[type="range"]
+{
+    width: 80%;
+}
+input[type="radio"] 
+{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+label 
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
