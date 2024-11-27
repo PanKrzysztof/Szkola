@@ -4,66 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
-  
+    <script src="JS/script.js"></script>
 </head>
 <body>
     <h1>proste działania</h1>
-    <form>
-        <label for="a">Podaj liczbę a</label>
-        <input type="number" id="a"><br>
-        <label for="b">Podaj liczbę b</label>
-        <input type="number" id="b"> <br>
-        <input type="button" value="dodawanie" onclick="suma()">
-        <input type="button" value="odejmowanie"  onclick="minus()">
-        <input type="button" value="mnożenie"  onclick="razy()">
-        <input type="button" value="dzielenie"  onclick="podziel()"><br>
-    </form>
+    <label for="a">Podaj liczbę a</label>
+    <input type="number" id="a"><br>
+    <label for="b">Podaj liczbę b</label>
+    <input type="number" id="b"> <br>
+    <input type="button" value="dodawanie" onclick="dodawanie()">
+    <input type="button" value="odejmowanie"  onclick="odejmowanie()">
+    <input type="button" value="mnożenie"  onclick="mnozenie()">
+    <input type="button" value="dzielenie"  onclick="dzielenie()"><br>
     <section id="wynik"></section>
-    <script>
-  
-        function suma(){
-            const a=document.getElementById("a").valueAsNumber;
-            const b=document.getElementById("b").valueAsNumber;
-        let suma=a+b;
-        document.getElementById('wynik').innerHTML="suma wynosi ="+suma;
-        }
-        function minus(){
-            const a=document.getElementById("a").valueAsNumber;
-            const b=document.getElementById("b").valueAsNumber;
-        let minus=(a-b);
-        document.getElementById('wynik').innerHTML="odejmowanie wynosi ="+minus;
-        }
-        function razy(){
-            const a=document.getElementById("a").valueAsNumber;
-            const b=document.getElementById("b").valueAsNumber;
-        let mnozenie=(a*b);
-        document.getElementById('wynik').innerHTML="odejmowanie wynosi ="+mnozenie;
-        }
-        function podziel(){
-        
-            const a=document.getElementById("a").valueAsNumber;
-            const b=document.getElementById("b").valueAsNumber;
-        if(b==0){
-            document.getElementById('wynik').innerHTML="nie dzielimy przez zero!";
-        }else{
-        let dziel=(a/b);
-        document.getElementById('wynik').innerHTML="odejmowanie wynosi ="+dziel;
-        }}
-       
-    </script>
     <h1>Kwadrat</h1>
-    Podaj długość boku: <input type="number" id="k"><br>
+    Podaj długość boku: <input type="number" id="bok"><br>
     <input type="button" onclick="pole()" value="licz pole">
     <input type="button" onclick="obw()" value="licz obwód">
     <section id="wynik2"></section>
-    <script>
-        function pole(){
-        let k = document.getElementById("k").valueAsNumber;
-        if(isNaN(k)){
-            document.getElementById("wynik2").innerHTML="podaj długość boku";
-        }else
-        document.getElementById("wynik2").innerHTML="P=a<sup>2</sup> = "+(k*k);
-        }
-    </script>
+    <h1>Zmiana jednostek temperatur</h1>
+    Temperatura w °C<br> 
+    <input type="text" id="temp"><br>
+    Zamień na<br>
+    <input type="button" onclick="kelwiny()" value="Kelwiny">
+    <input type="button" onclick="fahrenheity()" value="Fahrenheity">
+    <section id="wynik3"></section> 
 </body>
 </html>
