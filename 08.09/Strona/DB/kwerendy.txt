@@ -1,0 +1,4 @@
+kw1: SELECT imie, miot FROM swinki WHERE data_ur LIKE "____-07-%";
+kw2: SELECT data_ur, miot, rasa FROM swinki JOIN rasy ON rasy_id=rasy.id WHERE rasy.id=1 GROUP BY miot;
+kw3: SELECT imie, cena, opis FROM swinki WHERE rasy_id=1;
+kw4: SELECT rasa FROM rasy;
