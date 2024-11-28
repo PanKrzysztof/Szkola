@@ -5,7 +5,7 @@ body
 .motor
 {
     display: block;
-    padding-left: 15%;
+    left: 15%;
     width: 70%;
     position: absolute;
     z-index: -1;
@@ -26,8 +26,9 @@ body
     width: 75%;
     height: 600px;
     font-size: 120%;
-    overflow: initial;
-    box-shadow: 10px, 10, 7px, dimgray;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 10px 10px 7px dimgray;
     float: left;
 }
 .prawy1, .prawy2
@@ -37,7 +38,7 @@ body
     margin: 1%;
     width: 15%;
     height: 300px;
-    box-shadow: 10px, 10, 7px, dimgray;
+    box-shadow: 10px 10px 7px dimgray;
     float: left;
 }
 .stopka
