@@ -1,0 +1,4 @@
+kw1: SELECT nazwa, ilosc, nazwaProd FROM materialy JOIN producenci ON Producenci_id=producenci.id WHERE ilosc>9;
+kw2: SELECT nazwa, nazwaProd, nazwaJedn FROM materialy JOIN jednostki ON Jednostki_id=jednostki.id JOIN producenci ON Producenci_id=producenci.id;
+kw3: CREATE USER 'zaopatrzenie'@'localhost' IDENTIFIED BY "Z@op@trzenie";
+kw4: GRANT SELECT, UPDATE, INSERT, DELETE ON firma.* TO 'zaopatrzenie'@'localhost';
